@@ -1,3 +1,9 @@
+# revision 24089
+# category Package
+# catalog-ctan /language/hyph-utf8
+# catalog-date 2011-09-14 17:59:09 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-hyph-utf8
 Version:	20110914
 Release:	1
@@ -564,6 +570,7 @@ the older patterns.
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/languages/tr/generate_patterns_tr.rb
 %doc %{_texmfdistdir}/source/luatex/hyph-utf8/Makefile
 %doc %{_texmfdistdir}/source/luatex/hyph-utf8/luatex-hyphen.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -574,3 +581,5 @@ the older patterns.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
