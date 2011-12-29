@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 Modern native UTF-8 engines such as XeTeX and LuaTeX need
@@ -35,20 +32,12 @@ TeX systems are only read at iniTeX time, it is hoped that the
 UTF-8 patterns, with their converters, will completely supplant
 the older patterns.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -571,7 +560,6 @@ the older patterns.
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/languages/tr/generate_patterns_tr.rb
 %doc %{_texmfdistdir}/source/luatex/hyph-utf8/Makefile
 %doc %{_texmfdistdir}/source/luatex/hyph-utf8/luatex-hyphen.dtx
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -582,5 +570,3 @@ the older patterns.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
