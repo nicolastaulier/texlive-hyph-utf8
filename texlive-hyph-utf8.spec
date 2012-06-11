@@ -1,12 +1,12 @@
-# revision 24089
+# revision 25990
 # category Package
 # catalog-ctan /language/hyph-utf8
-# catalog-date 2011-09-14 17:59:09 +0200
+# catalog-date 2012-04-16 20:54:28 +0200
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-hyph-utf8
-Version:	20110914
-Release:	2
+Version:	20120416
+Release:	1
 Summary:	Hyphenation patterns expressed in UTF-8
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyph-utf8
@@ -71,6 +71,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-eu.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-fi.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-fr.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-fur.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-ga.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-gl.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-grc.tex
@@ -102,6 +103,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-pa.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-pl.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-pt.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-rm.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-ro.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-ru.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-sa.tex
@@ -131,6 +133,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-eu.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-fi.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-fr.ec.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-fur.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-ga.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-gl.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-hr.ec.tex
@@ -161,7 +164,9 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-zh-latn-pinyin.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-af.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-fr.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-fur.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-it.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-rm.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-uk.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-zh-latn-pinyin.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex-8bit/copthyph.tex
@@ -187,6 +192,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-eu.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-fi.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-fr.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-fur.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-ga.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-gl.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-grc.tex
@@ -219,6 +225,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-pa.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-pl.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-pt.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-rm.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-ro.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-ru.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-sa.tex
@@ -322,6 +329,10 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-fr.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-fr.lic.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-fr.pat.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-fur.chr.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-fur.hyp.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-fur.lic.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-fur.pat.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ga.chr.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ga.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ga.lic.txt
@@ -442,6 +453,10 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pt.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pt.lic.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pt.pat.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-rm.chr.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-rm.hyp.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-rm.lic.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-rm.pat.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ro.chr.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ro.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ro.lic.txt
