@@ -1,11 +1,11 @@
-# revision 25990
+# revision 26771
 # category Package
 # catalog-ctan /language/hyph-utf8
-# catalog-date 2012-04-16 20:54:28 +0200
+# catalog-date 2012-05-30 14:24:48 +0200
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-hyph-utf8
-Version:	20120416
+Version:	20120530
 Release:	1
 Summary:	Hyphenation patterns expressed in UTF-8
 Group:		Publishing
@@ -88,7 +88,6 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-kmr.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-kn.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-la.tex
-%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-lo.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-lt.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-lv.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-ml.tex
@@ -209,7 +208,6 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-kmr.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-kn.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-la.tex
-%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-lo.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-lt.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-lv.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-ml.tex
@@ -397,10 +395,6 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-la.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-la.lic.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-la.pat.txt
-%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-lo.chr.txt
-%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-lo.hyp.txt
-%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-lo.lic.txt
-%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-lo.pat.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-lt.chr.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-lt.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-lt.lic.txt
