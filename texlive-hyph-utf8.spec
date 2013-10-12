@@ -1,11 +1,11 @@
-# revision 26771
+# revision 30757
 # category Package
 # catalog-ctan /language/hyph-utf8
-# catalog-date 2012-05-30 14:24:48 +0200
+# catalog-date 2013-05-08 01:16:25 +0200
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-hyph-utf8
-Version:	20120530
+Version:	20130508
 Release:	1
 Summary:	Hyphenation patterns expressed in UTF-8
 Group:		Publishing
@@ -14,6 +14,7 @@ License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyph-utf8.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyph-utf8.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyph-utf8.source.tar.xz
+Source10:	%{name}.rpmlintrc
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -47,8 +48,10 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/conversions/conv-utf8-il3.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/conversions/conv-utf8-l7x.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/conversions/conv-utf8-lmc.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/conversions/conv-utf8-lth.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/conversions/conv-utf8-qx.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/conversions/conv-utf8-t2a.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/conversions/conv-utf8-t8m.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-af.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-as.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-bg.tex
@@ -85,6 +88,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-id.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-is.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-it.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-ka.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-kmr.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-kn.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-la.tex
@@ -101,6 +105,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-or.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-pa.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-pl.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-pms.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-pt.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-rm.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-ro.tex
@@ -113,6 +118,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-sv.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-ta.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-te.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-th.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-tk.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-tr.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/loadhyph-uk.tex
@@ -139,6 +145,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-hsb.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-hu.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-is.ec.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-ka.t8m.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-kmr.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-la.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-lt.l7x.tex
@@ -157,6 +164,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-sk.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-sl.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-sv.ec.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-th.lth.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-tk.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-tr.ec.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/ptex/hyph-uk.t2a.tex
@@ -165,6 +173,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-fr.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-fur.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-it.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-pms.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-rm.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-uk.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/quote/hyph-quote-zh-latn-pinyin.tex
@@ -205,6 +214,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-id.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-is.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-it.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-ka.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-kmr.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-kn.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-la.tex
@@ -222,6 +232,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-or.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-pa.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-pl.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-pms.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-pt.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-rm.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-ro.tex
@@ -235,6 +246,7 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-sv.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-ta.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-te.tex
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-th.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-tk.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-tr.tex
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/tex/hyph-uk.tex
@@ -383,6 +395,10 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-it.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-it.lic.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-it.pat.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ka.chr.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ka.hyp.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ka.lic.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-ka.pat.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-kmr.chr.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-kmr.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-kmr.lic.txt
@@ -443,6 +459,10 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pl.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pl.lic.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pl.pat.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pms.chr.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pms.hyp.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pms.lic.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pms.pat.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pt.chr.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pt.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-pt.lic.txt
@@ -495,6 +515,10 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-te.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-te.lic.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-te.pat.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-th.chr.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-th.hyp.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-th.lic.txt
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-th.pat.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-tk.chr.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-tk.hyp.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-tk.lic.txt
@@ -512,7 +536,6 @@ the older patterns.
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-zh-latn-pinyin.lic.txt
 %{_texmfdistdir}/tex/generic/hyph-utf8/patterns/txt/hyph-zh-latn-pinyin.pat.txt
 %{_texmfdistdir}/tex/luatex/hyph-utf8/etex.src
-%{_texmfdistdir}/tex/luatex/hyph-utf8/hyphen.cfg
 %{_texmfdistdir}/tex/luatex/hyph-utf8/luatex-hyphen.lua
 %doc %{_texmfdistdir}/doc/generic/hyph-utf8/CHANGES
 %doc %{_texmfdistdir}/doc/generic/hyph-utf8/README
@@ -526,7 +549,7 @@ the older patterns.
 %doc %{_texmfdistdir}/doc/generic/hyph-utf8/hyphenation.pdf
 %doc %{_texmfdistdir}/doc/generic/hyph-utf8/hyphenation.tex
 %doc %{_texmfdistdir}/doc/generic/hyph-utf8/img/miktex-languages.png
-%doc %{_texmfdistdir}/doc/generic/hyph-utf8/img/texlive-collection-lang.png
+%doc %{_texmfdistdir}/doc/generic/hyph-utf8/img/texlive-collection.png
 %doc %{_texmfdistdir}/doc/generic/hyph-utf8/sa/hyphenmin.txt
 %doc %{_texmfdistdir}/doc/luatex/hyph-utf8/README
 %doc %{_texmfdistdir}/doc/luatex/hyph-utf8/luatex-hyphen.pdf
@@ -538,8 +561,10 @@ the older patterns.
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/il3.dat
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/l7x.dat
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/lmc.dat
+%doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/lth.dat
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/qx.dat
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/t2a.dat
+%doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/t8m.dat
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/data/encodings/texnansi.dat
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/generate-converters.rb
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/generate-pattern-loaders.rb
@@ -579,25 +604,3 @@ the older patterns.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120530-1
-+ Revision: 812302
-- Update to latest release.
-
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120416-1
-+ Revision: 804682
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110914-2
-+ Revision: 752680
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110914-1
-+ Revision: 718688
-- texlive-hyph-utf8
-- texlive-hyph-utf8
-- texlive-hyph-utf8
-- texlive-hyph-utf8
-
