@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyph-utf8
 Version:	20120530
-Release:	1
+Release:	2
 Summary:	Hyphenation patterns expressed in UTF-8
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyph-utf8
