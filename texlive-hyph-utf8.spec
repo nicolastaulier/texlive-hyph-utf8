@@ -1,12 +1,12 @@
-# revision 30757
+# revision 33887
 # category Package
 # catalog-ctan /language/hyph-utf8
-# catalog-date 2013-05-08 01:16:25 +0200
+# catalog-date 2014-05-07 16:23:05 +0200
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-hyph-utf8
-Version:	20130508
-Release:	6
+Version:	20140507
+Release:	1
 Summary:	Hyphenation patterns expressed in UTF-8
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyph-utf8
@@ -573,7 +573,6 @@ the older patterns.
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/generate-tl-files.rb
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/generate-webpage.rb
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/hyph-utf8.rb
-%doc %{_texmfdistdir}/source/generic/hyph-utf8/languages-txt.rb
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/languages.rb
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/languages/es/README
 %doc %{_texmfdistdir}/source/generic/hyph-utf8/languages/es/eshyph-make.lua
