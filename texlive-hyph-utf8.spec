@@ -1,5 +1,5 @@
 Name:		texlive-hyph-utf8
-Version:	20181105
+Version:	20190406
 Release:	1
 Summary:	Hyphenation patterns expressed in UTF-8
 Group:		Publishing
